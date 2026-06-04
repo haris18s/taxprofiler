@@ -3,8 +3,8 @@
     IMPORT MODULES / SUBWORKFLOWS / FUNCTIONS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
-include { FASTQC                        } from '../../modules/nf-core/fastqc/main'
-include { MULTIQC                       } from '../../modules/nf-core/multiqc/main'
+include { FASTQC                        } from '../../modules/nf-core/fastqc'
+include { MULTIQC                       } from '../../modules/nf-core/multiqc'
 include { paramsSummaryMap              } from 'plugin/nf-schema'
 include { paramsSummaryMultiqc          } from '../../subworkflows/nf-core/utils_nfcore_pipeline'
 include { softwareVersionsToYAML        } from '../../subworkflows/nf-core/utils_nfcore_pipeline'
@@ -20,15 +20,15 @@ include { methodsDescriptionText        } from '../../subworkflows/local/utils_n
 // SUBWORKFLOW: Consisting of a mix of local and nf-core/modules
 //
 
-include { SHORTREAD_PREPROCESSING       } from '../subworkflows/local/shortread_preprocessing'
-include { NONPAREIL                     } from '../subworkflows/local/nonpareil'
-include { LONGREAD_PREPROCESSING        } from '../subworkflows/local/longread_preprocessing'
-include { SHORTREAD_HOSTREMOVAL         } from '../subworkflows/local/shortread_hostremoval'
-include { LONGREAD_HOSTREMOVAL          } from '../subworkflows/local/longread_hostremoval'
-include { SHORTREAD_COMPLEXITYFILTERING } from '../subworkflows/local/shortread_complexityfiltering'
-include { PROFILING                     } from '../subworkflows/local/profiling'
-include { VISUALIZATION_KRONA           } from '../subworkflows/local/visualization_krona'
-include { STANDARDISATION_PROFILES      } from '../subworkflows/local/standardisation_profiles'
+include { SHORTREAD_PREPROCESSING       } from '../../subworkflows/local/shortread_preprocessing'
+include { NONPAREIL                     } from '../../subworkflows/local/nonpareil'
+include { LONGREAD_PREPROCESSING        } from '../../subworkflows/local/longread_preprocessing'
+include { SHORTREAD_HOSTREMOVAL         } from '../../subworkflows/local/shortread_hostremoval'
+include { LONGREAD_HOSTREMOVAL          } from '../../subworkflows/local/longread_hostremoval'
+include { SHORTREAD_COMPLEXITYFILTERING } from '../../subworkflows/local/shortread_complexityfiltering'
+include { PROFILING                     } from '../../subworkflows/local/profiling'
+include { VISUALIZATION_KRONA           } from '../../subworkflows/local/visualization_krona'
+include { STANDARDISATION_PROFILES      } from '../../subworkflows/local/standardisation_profiles'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,9 +39,9 @@ include { STANDARDISATION_PROFILES      } from '../subworkflows/local/standardis
 //
 // MODULE: Installed directly from nf-core/modules
 //
-include { UNTAR                         } from '../modules/nf-core/untar/main'
-include { FALCO                         } from '../modules/nf-core/falco/main'
-include { CAT_FASTQ as MERGE_RUNS       } from '../modules/nf-core/cat/fastq/main'
+include { UNTAR                         } from '../../modules/nf-core/untar/main'
+include { FALCO                         } from '../../modules/nf-core/falco/main'
+include { CAT_FASTQ as MERGE_RUNS       } from '../../modules/nf-core/cat/fastq/main'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
