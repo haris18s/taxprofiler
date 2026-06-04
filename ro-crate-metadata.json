@@ -44,6 +44,9 @@
                     "@id": "modules/"
                 },
                 {
+                    "@id": "modules/local/"
+                },
+                {
                     "@id": "modules/nf-core/"
                 },
                 {
@@ -157,8 +160,23 @@
                 "taxonomic-classification",
                 "taxonomic-profiling"
             ],
-            "license": ["MIT"],
-            "name": ["nf-core/taxprofiler"],
+            "license": [
+                "MIT"
+            ],
+            "maintainer": [
+                {
+                    "@id": "https://orcid.org/0009-0006-0893-3771"
+                },
+                {
+                    "@id": "#jfy133@gmail.com"
+                },
+                {
+                    "@id": "#64467552+LilyAnderssonLee@users.noreply.github.com"
+                }
+            ],
+            "name": [
+                "nf-core/taxprofiler"
+            ],
             "programmingLanguage": {
                 "@id": "https://w3id.org/workflowhub/workflow-ro-crate#nextflow"
             },
@@ -235,6 +253,11 @@
             "@id": "modules/",
             "@type": "Dataset",
             "description": "Modules used by the pipeline"
+        },
+        {
+            "@id": "modules/local/",
+            "@type": "Dataset",
+            "description": "Pipeline-specific modules"
         },
         {
             "@id": "modules/nf-core/",
