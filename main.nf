@@ -18,6 +18,7 @@
 include { TAXPROFILER             } from './workflows/taxprofiler'
 include { PIPELINE_INITIALISATION } from './subworkflows/local/utils_nfcore_taxprofiler_pipeline'
 include { PIPELINE_COMPLETION     } from './subworkflows/local/utils_nfcore_taxprofiler_pipeline'
+
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     NAMED WORKFLOWS FOR PIPELINE
@@ -28,25 +29,25 @@ include { PIPELINE_COMPLETION     } from './subworkflows/local/utils_nfcore_taxp
 // WORKFLOW: Run main analysis pipeline depending on type of input
 //
 workflow NFCORE_TAXPROFILER {
-
     take:
     samplesheet // channel: samplesheet read in from --input
+    databases // channel: databases in from --databases
 
     main:
 
     //
     // WORKFLOW: Run pipeline
     //
-    TAXPROFILER (
+    TAXPROFILER(
         samplesheet,
-        params.multiqc_config,
-        params.multiqc_logo,
-        params.multiqc_methods_description,
-        params.outdir,
+        databases,
     )
+
     emit:
     multiqc_report = TAXPROFILER.out.multiqc_report // channel: /path/to/multiqc_report.html
 }
+
+
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     RUN MAIN WORKFLOW
@@ -88,33 +89,4 @@ workflow {
         params.monochrome_logs,
         NFCORE_TAXPROFILER.out.multiqc_report
     )
-}
-
-
-/*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    NAMED WORKFLOWS FOR PIPELINE
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
-
-//
-// WORKFLOW: Run main analysis pipeline depending on type of input
-//
-workflow NFCORE_TAXPROFILER {
-    take:
-    samplesheet // channel: samplesheet read in from --input
-    databases // channel: databases in from --databases
-
-    main:
-
-    //
-    // WORKFLOW: Run pipeline
-    //
-    TAXPROFILER(
-        samplesheet,
-        databases,
-    )
-
-    emit:
-    multiqc_report = TAXPROFILER.out.multiqc_report // channel: /path/to/multiqc_report.html
 }
