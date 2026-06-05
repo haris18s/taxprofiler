@@ -73,7 +73,7 @@ workflow PIPELINE_INITIALISATION {
 * Software dependencies
     https://github.com/nf-core/taxprofiler/blob/main/CITATIONS.md
 """
-    if (monochrome_logs) {
+    if (_monochrome_logs) {
         before_text = before_text.replaceAll(/\033\[[0-9;]*m/, '')
     }
 
