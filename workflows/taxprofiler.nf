@@ -63,7 +63,6 @@ workflow TAXPROFILER {
     def ch_versions = channel.empty()
     def ch_multiqc_files = channel.empty()
 
-
     // Preprocessing auxiliary file input channel preperation
     adapterlist = params.shortread_qc_adapterlist ? file(params.shortread_qc_adapterlist) : []
     custom_adapters = params.longread_qc_adapterlist ? file(params.longread_qc_adapterlist, checkIfExists: true) : []
@@ -155,7 +154,6 @@ workflow TAXPROFILER {
         }
         else {
             FASTQC(ch_input_for_fastqc)
-            ch_versions = ch_versions.mix(FASTQC.out.versions.first())
         }
     }
 
