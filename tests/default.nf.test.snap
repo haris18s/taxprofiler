@@ -381,6 +381,7 @@
                 "multiqc/multiqc_plots/pdf/fastp-seq-quality-plot_Read_2_Before_filtering.pdf",
                 "multiqc/multiqc_plots/pdf/fastp_filtered_reads_plot-cnt.pdf",
                 "multiqc/multiqc_plots/pdf/fastp_filtered_reads_plot-pct.pdf",
+                "multiqc/multiqc_plots/pdf/fastqc-1-status-check-heatmap.pdf",
                 "multiqc/multiqc_plots/pdf/fastqc-1_adapter_content_plot.pdf",
                 "multiqc/multiqc_plots/pdf/fastqc-1_overrepresented_sequences_plot.pdf",
                 "multiqc/multiqc_plots/pdf/fastqc-1_per_base_n_content_plot.pdf",
@@ -392,6 +393,7 @@
                 "multiqc/multiqc_plots/pdf/fastqc-1_sequence_counts_plot-pct.pdf",
                 "multiqc/multiqc_plots/pdf/fastqc-1_sequence_duplication_levels_plot.pdf",
                 "multiqc/multiqc_plots/pdf/fastqc-1_top_overrepresented_sequences_table.pdf",
+                "multiqc/multiqc_plots/pdf/fastqc-status-check-heatmap.pdf",
                 "multiqc/multiqc_plots/pdf/fastqc_adapter_content_plot.pdf",
                 "multiqc/multiqc_plots/pdf/fastqc_overrepresented_sequences_plot.pdf",
                 "multiqc/multiqc_plots/pdf/fastqc_per_base_n_content_plot.pdf",
@@ -507,6 +509,7 @@
                 "multiqc/multiqc_plots/png/fastp-seq-quality-plot_Read_2_Before_filtering.png",
                 "multiqc/multiqc_plots/png/fastp_filtered_reads_plot-cnt.png",
                 "multiqc/multiqc_plots/png/fastp_filtered_reads_plot-pct.png",
+                "multiqc/multiqc_plots/png/fastqc-1-status-check-heatmap.png",
                 "multiqc/multiqc_plots/png/fastqc-1_adapter_content_plot.png",
                 "multiqc/multiqc_plots/png/fastqc-1_overrepresented_sequences_plot.png",
                 "multiqc/multiqc_plots/png/fastqc-1_per_base_n_content_plot.png",
@@ -518,6 +521,7 @@
                 "multiqc/multiqc_plots/png/fastqc-1_sequence_counts_plot-pct.png",
                 "multiqc/multiqc_plots/png/fastqc-1_sequence_duplication_levels_plot.png",
                 "multiqc/multiqc_plots/png/fastqc-1_top_overrepresented_sequences_table.png",
+                "multiqc/multiqc_plots/png/fastqc-status-check-heatmap.png",
                 "multiqc/multiqc_plots/png/fastqc_adapter_content_plot.png",
                 "multiqc/multiqc_plots/png/fastqc_overrepresented_sequences_plot.png",
                 "multiqc/multiqc_plots/png/fastqc_per_base_n_content_plot.png",
@@ -633,6 +637,7 @@
                 "multiqc/multiqc_plots/svg/fastp-seq-quality-plot_Read_2_Before_filtering.svg",
                 "multiqc/multiqc_plots/svg/fastp_filtered_reads_plot-cnt.svg",
                 "multiqc/multiqc_plots/svg/fastp_filtered_reads_plot-pct.svg",
+                "multiqc/multiqc_plots/svg/fastqc-1-status-check-heatmap.svg",
                 "multiqc/multiqc_plots/svg/fastqc-1_adapter_content_plot.svg",
                 "multiqc/multiqc_plots/svg/fastqc-1_overrepresented_sequences_plot.svg",
                 "multiqc/multiqc_plots/svg/fastqc-1_per_base_n_content_plot.svg",
@@ -644,6 +649,7 @@
                 "multiqc/multiqc_plots/svg/fastqc-1_sequence_counts_plot-pct.svg",
                 "multiqc/multiqc_plots/svg/fastqc-1_sequence_duplication_levels_plot.svg",
                 "multiqc/multiqc_plots/svg/fastqc-1_top_overrepresented_sequences_table.svg",
+                "multiqc/multiqc_plots/svg/fastqc-status-check-heatmap.svg",
                 "multiqc/multiqc_plots/svg/fastqc_adapter_content_plot.svg",
                 "multiqc/multiqc_plots/svg/fastqc_overrepresented_sequences_plot.svg",
                 "multiqc/multiqc_plots/svg/fastqc_per_base_n_content_plot.svg",
@@ -766,7 +772,11 @@
                 "taxpasta/metaphlan_metaphlan4.tsv"
             ]
         ],
+<<<<<<< HEAD
         "timestamp": "2026-06-05T16:11:07.299112462",
+=======
+        "timestamp": "2026-06-05T23:04:29.086644",
+>>>>>>> faab7f60 (Update snapshot)
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.3"
@@ -798,7 +808,11 @@
                 "2613_ERR5766181.bowtie2.log:md5,6cb148fdf3840de7a8a1f5315847817b"
             ]
         ],
+<<<<<<< HEAD
         "timestamp": "2026-06-05T16:11:07.450535378",
+=======
+        "timestamp": "2026-06-05T23:04:29.23861",
+>>>>>>> faab7f60 (Update snapshot)
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.3"
@@ -810,7 +824,11 @@
                 "ERR3201952_ERR3201952_filtered.stats:md5,70a916aef496e0335a3125ed3c1397a9"
             ]
         ],
+<<<<<<< HEAD
         "timestamp": "2026-06-05T16:11:31.362741031",
+=======
+        "timestamp": "2026-06-05T23:04:38.443304",
+>>>>>>> faab7f60 (Update snapshot)
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.3"
@@ -826,7 +844,11 @@
                 "ERR3201952_ERR3201952.stats:md5,4b27072b8c9224f1eefece14d3977d27"
             ]
         ],
+<<<<<<< HEAD
         "timestamp": "2026-06-05T16:11:31.80656954",
+=======
+        "timestamp": "2026-06-05T23:04:38.648172",
+>>>>>>> faab7f60 (Update snapshot)
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.3"
@@ -967,7 +989,11 @@
                 "2613_db1.bracken.tsv:md5,751961958ba36955dc0867e314d9da8b"
             ]
         ],
+<<<<<<< HEAD
         "timestamp": "2026-06-05T16:11:07.603182477",
+=======
+        "timestamp": "2026-06-05T23:04:29.337455",
+>>>>>>> faab7f60 (Update snapshot)
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.3"
@@ -1033,7 +1059,7 @@
             "metaphlan_metaphlan3_combined_reports.txt contains string 'UNCLASSIFIED': true",
             "metaphlan_metaphlan4_combined_reports.txt contains string 't__SGB4933_group': true",
             [
-
+                
             ]
         ],
         "timestamp": "2026-04-15T09:05:52.024752635",
@@ -1083,7 +1109,7 @@
             "kraken2_db1-bracken_combined_reports.txt contains string 'Saccharomyces cerevisiae S288C': true",
             "kraken2_db2_combined_reports.txt contains string 'Saccharomyces cerevisiae S288C': true",
             [
-
+                
             ]
         ],
         "timestamp": "2026-04-15T11:26:43.013855166",
@@ -1248,7 +1274,11 @@
                 }
             }
         ],
+<<<<<<< HEAD
         "timestamp": "2026-06-05T16:11:07.208900412",
+=======
+        "timestamp": "2026-06-05T23:04:28.951156",
+>>>>>>> faab7f60 (Update snapshot)
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.3"
@@ -1324,7 +1354,11 @@
                 "ERR3201952_ERR3201952.unmapped_other.tsv:md5,2f4e7a4cb46beff1c7059471a9ce0799"
             ]
         ],
+<<<<<<< HEAD
         "timestamp": "2026-06-05T16:11:31.30681036",
+=======
+        "timestamp": "2026-06-05T23:04:38.023364",
+>>>>>>> faab7f60 (Update snapshot)
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.3"
@@ -1338,7 +1372,11 @@
                 "2613_db1.kmcp.profile:md5,3d8c1e51679639d6011e3cb9b679485b"
             ]
         ],
+<<<<<<< HEAD
         "timestamp": "2026-06-05T16:11:20.129041215",
+=======
+        "timestamp": "2026-06-05T23:04:30.734205",
+>>>>>>> faab7f60 (Update snapshot)
         "meta": {
             "nf-test": "0.9.5",
             "nextflow": "26.04.3"
