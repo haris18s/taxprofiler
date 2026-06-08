@@ -255,7 +255,7 @@ If you update images or graphics, follow the nf-core [style guidelines](https://
 - [ ] Make a [Taxpasta](https://github.com/taxprofiler/taxpasta) module
 - [ ] Add the database building module to nf-core/createtaxdb (where possible)
 
-## New nf-test procedure and specifications
+### New nf-test procedure and specifications
 
 ### Procedure
 
