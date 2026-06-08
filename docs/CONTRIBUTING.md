@@ -257,7 +257,7 @@ If you update images or graphics, follow the nf-core [style guidelines](https://
 
 ### New nf-test procedure and specifications
 
-### Procedure
+#### Procedure
 
 When writing a new pipeline-level nf-tests for nf-core/taxprofiler, we recommend the following procedure:
 
