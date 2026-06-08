@@ -182,7 +182,7 @@ If you update images or graphics, follow the nf-core [style guidelines](https://
 
 ## Pipeline specific contribution guidelines
 
-## Adding a new profiler contribution workflow
+### Adding a new profiler contribution workflow
 
 > Note: does not have to be in this precise order
 
