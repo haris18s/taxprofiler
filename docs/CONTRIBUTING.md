@@ -272,7 +272,7 @@ When writing a new pipeline-level nf-tests for nf-core/taxprofiler, we recommend
 4. Run command above to get the `diff` of unstable files
 5. Update the assertions in each directories `.match()` snapshot for unstable files
 
-### Specifications
+#### Specifications
 
 Write the test files following the specifications below.
 
