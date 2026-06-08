@@ -243,7 +243,7 @@ If you update images or graphics, follow the nf-core [style guidelines](https://
 - [ ] Add nf-test file and snapshot. See [nf-test specifications](#new-nf-test-procedure-and-specifications) for more information.
 - [ ] Test(s) pass
 
-## Outside of pipeline repository
+#### Outside of pipeline repository
 
 - [ ] Make full test database
   - [ ] See `taxprofiler` branch of test datasets for instructions how to get raw FASTAs
