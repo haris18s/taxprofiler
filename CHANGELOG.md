@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### `Added`
 
+- [#741](https://github.com/nf-core/taxprofiler/pull/741) Updated to nf-core pipeline template v4.0.2,nf-schema v2.7.1 and nft-utils v1.0.0 (added by @sofstam)
+
 ### `Fixed`
 
 - [#736](https://github.com/nf-core/taxprofiler/issues/736) Fix MultiQC silently skipping large samtools stats files by increasing `log_filesize_limit` in MultiQC config (reported and fixed by @Leilanasd)
@@ -19,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Tool | Previous version | New version |
 | ---- | ---------------- | ----------- |
+| multiqc | 1.32             | 1.34        |
 
 ## v2.0.0 - [2026-04-15]
 
