@@ -415,7 +415,6 @@ workflow PROFILING {
         // Hardcode to _always_ produce the report file (which is our basic output, and goes into)
         KRAKENUNIQ_PRELOADEDKRAKENUNIQ(ch_input_for_krakenuniq.reads, ch_input_for_krakenuniq.seqtype, ch_input_for_krakenuniq.db, params.krakenuniq_save_reads, true, params.krakenuniq_save_readclassifications)
         ch_multiqc_files = ch_multiqc_files.mix(KRAKENUNIQ_PRELOADEDKRAKENUNIQ.out.report)
-        ch_versions = ch_versions.mix(KRAKENUNIQ_PRELOADEDKRAKENUNIQ.out.versions.first())
         ch_raw_classifications = ch_raw_classifications.mix(KRAKENUNIQ_PRELOADEDKRAKENUNIQ.out.classified_assignment.map { meta, profiles -> [meta - meta.subMap('seqtype'), profiles] })
         ch_raw_profiles = ch_raw_profiles.mix(KRAKENUNIQ_PRELOADEDKRAKENUNIQ.out.report.map { meta, profiles -> [meta - meta.subMap('seqtype'), profiles] })
     }
@@ -590,13 +589,12 @@ workflow PROFILING {
                 db: db
             }
 
-        ch_input_for_sylphtax_filtered = ch_input_for_sylphtax.report
-                .filter { meta, report ->
-                    if (report.isEmpty()) {
-                        log.warn("[nf-core/taxprofiler] Sample ${meta.id} has an empty report file. Will not be processed by SYLPHTAX_TAXPROF.")
-                    }
-                    !report.isEmpty()
-                }
+        ch_input_for_sylphtax_filtered = ch_input_for_sylphtax.report.filter { meta, report ->
+            if (report.isEmpty()) {
+                log.warn("[nf-core/taxprofiler] Sample ${meta.id} has an empty report file. Will not be processed by SYLPHTAX_TAXPROF.")
+            }
+            !report.isEmpty()
+        }
 
 
         def file_sylphtaxonomy = params.sylph_taxonomy ? file(params.sylph_taxonomy, checkIfExists: true) : []
