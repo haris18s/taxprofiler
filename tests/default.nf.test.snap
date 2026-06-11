@@ -842,9 +842,9 @@
         "content": [
             "bracken_db1.tsv contains string '9606': true",
             "centrifuge_db3.tsv contains string '131567': true",
-            "diamond_db1.tsv contains string '8058': true",
+            "diamond_db1.tsv contains string '8058': false",
             "diamond_db2.tsv contains string 'taxonomy_id': true",
-            "diamond_db3.tsv contains string '8058': true",
+            "diamond_db3.tsv contains string '8058': false",
             "ganon_db1.tsv contains string 'taxonomy_id': true",
             "kaiju_db5.tsv contains string '10239': true",
             "kaiju_db6.tsv contains string '10239': true",
@@ -1039,7 +1039,7 @@
             "metaphlan_metaphlan3_combined_reports.txt contains string 'UNCLASSIFIED': true",
             "metaphlan_metaphlan4_combined_reports.txt contains string 't__SGB4933_group': true",
             [
-
+                
             ]
         ],
         "timestamp": "2026-04-15T09:05:52.024752635",
@@ -1089,7 +1089,7 @@
             "kraken2_db1-bracken_combined_reports.txt contains string 'Saccharomyces cerevisiae S288C': true",
             "kraken2_db2_combined_reports.txt contains string 'Saccharomyces cerevisiae S288C': true",
             [
-
+                
             ]
         ],
         "timestamp": "2026-04-15T11:26:43.013855166",
@@ -1125,7 +1125,7 @@
                     "centrifuge": "1.0.4"
                 },
                 "DIAMOND_BLASTX": {
-                    "diamond": "2.1.12"
+                    "diamond": "2.2.1"
                 },
                 "FASTP_PAIRED": {
                     "fastp": "0.24.0"
