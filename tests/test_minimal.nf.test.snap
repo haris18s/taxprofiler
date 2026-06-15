@@ -104,14 +104,14 @@
                     "fastqc": "0.12.1"
                 },
                 "Workflow": {
-                    "nf-core/taxprofiler": "v2.0.1"
+                    "nf-core/taxprofiler": "v2.0.2dev"
                 }
             }
         ],
-        "timestamp": "2026-04-09T17:29:53.052558776",
+        "timestamp": "2026-06-15T14:52:08.924151759",
         "meta": {
-            "nf-test": "0.9.3",
-            "nextflow": "25.10.4"
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.3"
         }
     }
 }
