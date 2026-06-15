@@ -104,7 +104,7 @@
                     "fastqc": "0.12.1"
                 },
                 "Workflow": {
-                    "nf-core/taxprofiler": "vdev"
+                    "nf-core/taxprofiler": "v2.0.2dev"
                 }
             }
         ],
