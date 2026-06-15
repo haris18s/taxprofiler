@@ -3,6 +3,30 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v2.0.1 - [2026-06-15]
+
+### `Added`
+
+- [#741](https://github.com/nf-core/taxprofiler/pull/741) Updated to nf-core pipeline template v4.0.2 (added by @sofstam)
+
+### `Fixed`
+
+- [#736](https://github.com/nf-core/taxprofiler/issues/736) Fix MultiQC silently skipping large samtools stats files by increasing `log_filesize_limit` in MultiQC config (reported and fixed by @Leilanasd)
+- [#747](https://github.com/nf-core/taxprofiler/issues/747) Fix KrakenUniq's `ext.args2` not being defined correctly (by @mahesh-panchal, @jfy133)
+
+### `Changed`
+
+### `Deprecated`
+
+### `Dependencies`
+
+| Tool      | Previous version | New version |
+| --------- | ---------------- | ----------- |
+| multiqc   | 1.32             | 1.34        |
+| nf-schema | 2.5.1            | 2.7.2       |
+| nft-utils | 0.0.9            | 1.0.0       |
+| diamond   | 2.1.12           | 2.2.1       |
+
 ## v2.0.0 - [2026-04-15]
 
 ### `Added`
